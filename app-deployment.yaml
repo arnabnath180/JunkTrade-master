@@ -45,8 +45,7 @@ spec:
                   key: dbName
       volumes:
         - name: logs
-          hostPath:
-            path: /tmp/logs
+          emptyDir: {}
 ---
 apiVersion: v1
 kind: Service
